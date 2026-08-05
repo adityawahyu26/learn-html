@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 29</title>
+</head>
+
+<body>
+    <h2>Form Registrasi Youtube</h2>
+    <form action="">
+        <fieldset>
+            <legend>Informasi Pengguna</legend>
+            <p><label for="email">Email : </label>
+                <input type="text" name="email" id="email">
+            </p>
+
+            <p><label for="tanggal_lahir">Tanggal Lahir : </label>
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir">
+            </p>
+
+            <p><label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferensi</legend>
+            <p><label for="bahasa">Bahasa : </label>
+                <select name="bahasa" id="bahasa">
+                    <option value="en">English</option>
+                    <option value="jp">Japanese</option>
+                    <option value="fr">French</option>
+                    <option value="id" selected>Indonesia</option>
+                    <option value="sp">Spanish</option>
+                </select>
+            </p>
+
+            <p><label for="usia_18">Apa anda berusia 18 tahun ke atas?</label>
+                <input type="radio" id="ya" name="usia" checked>Ya
+                <input type="radio" id="tidak" name="usia">Tidak
+            </p>
+
+            <p><label for="">Genre Favorit : </label></p>
+            <p><input type="checkbox" name="genre" id="gaya-hidup">Artis & Gaya Hidup</p>
+            <p><input type="checkbox" name="genre" id="musik">Musik & Seni</p>
+            <p><input type="checkbox" name="genre" id="olahraga">Olahraga & Kesehatan</p>
+            <p><input type="checkbox" name="genre" id="teknologi">Sains & Teknologi</p>
+            <p><input type="checkbox" name="genre" id="game">Game & Hiburan</p>
+
+            <p><label for="feedback">Feedback : </label></p>
+            <p><textarea name="feedback" id="feedback" cols="80" rows="5"></textarea></p>
+        </fieldset>
+
+        <input type="checkbox" id="setuju" name="setuju">
+        <label for="setuju">Saya setuju dengan syarat dan ketentuan</label>
+
+        <p><button type="submit">Daftar</button></p>
+    </form>
+</body>
+
+</html>
